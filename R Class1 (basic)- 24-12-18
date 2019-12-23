@@ -1,0 +1,281 @@
+
+R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
+Copyright (C) 2017 The R Foundation for Statistical Computing
+Platform: i386-w64-mingw32/i386 (32-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> 
+> 
+> hello R
+Error: unexpected symbol in "hello R"
+> hello('R')
+Error in hello("R") : could not find function "hello"
+> print ('hello')
+[1] "hello"
+> a=1
+> b=5
+> print (a+b)
+[1] 6
+> demo()
+> print(a*b)
+[1] 5
+> print(a/b)
+[1] 0.2
+> print(a%b)
+Error: unexpected input in "print(a%b)"
+> print (b%a)
+Error: unexpected input in "print (b%a)"
+> a<-'hello World)
++ 
++ 
++ >x<-20
++ print(a)
++ a<-'hello World')
+Error: unexpected symbol in:
+"print(a)
+a<-'hello"
+> x<-20
+> 20>-x
+[1] TRUE
+> 20>-a
+[1] TRUE
+> print('Hello','World')
+Error in print.default("Hello", "World") : invalid 'digits' argument
+In addition: Warning message:
+In print.default("Hello", "World") : NAs introduced by coercion
+> cat('Hello','World')
+Hello World> 
+> a=Hi
+Error: object 'Hi' not found
+> b=, how are you/
+Error: unexpected ',' in "b=,"
+> a=50
+> b=40
+> print(a+b)
+[1] 90
+> print("The sum is ="a+b)
+Error: unexpected symbol in "print("The sum is ="a"
+> print("The sum is =",a+b)
+Error in print.default("The sum is =", a + b) : invalid 'digits' argument
+> print("The sum is " a+b)
+Error: unexpected symbol in "print("The sum is " a"
+> print("The sum is " a)
+Error: unexpected symbol in "print("The sum is " a"
+> cat("The sum is:'a+b)
++ 
++ cat("The sum is:',a+b)
+Error: unexpected symbol in:
+"
+cat("The"
+> cat("The sum is:",a+b)
+The sum is: 90> 
+> sqrt(a)
+[1] 7.071068
+> cat("square is",sqrt(a))
+square is 7.071068> 
+> print(a^2)
+[1] 2500
+> print(abs a)
+Error: unexpected symbol in "print(abs a"
+> abs(a)
+[1] 50
+> factorial(3)
+[1] 6
+> round(23.67)
+[1] 24
+> floor(44.12)
+[1] 44
+> round(12.5)
+[1] 12
+> floor(12.5)
+[1] 12
+> sealing(12.5)
+Error in sealing(12.5) : could not find function "sealing"
+> ceilinf(12.5)
+Error in ceilinf(12.5) : could not find function "ceilinf"
+> ceiling(12.5)
+[1] 13
+> floor(12.51)
+[1] 12
+> floor(12.52)
+[1] 12
+> round(12.52)
+[1] 13
+> ceiling(12.11)
+[1] 13
+> x3=factorial(a)
+> print(x3)
+[1] 3.041409e+64
+> log10(2)
+[1] 0.30103
+> log(2,10)
+[1] 0.30103
+> log(10,2)
+[1] 3.321928
+> sin(60)
+[1] -0.3048106
+> sin(60*pi/180)
+[1] 0.8660254
+> tan(45)
+[1] 1.619775
+> sys.time()
+Error in sys.time() : could not find function "sys.time"
+> Sys.time()
+[1] "2018-12-24 10:12:37 IST"
+> Sys.Date()
+[1] "2018-12-24"
+> startdate<-as.Date(2016-03-01)
+Error in as.Date.numeric(2016 - 3 - 1) : 'origin' must be supplied
+> startdate<-as.Date("2016-03-01")
+> Sys.Date()-startdate
+Time difference of 1028 days
+> seq(15)
+ [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
+> seq(5:15)
+ [1]  1  2  3  4  5  6  7  8  9 10 11
+> seq(from=2,to=8
++ seq(from=2,to=8)
+Error: unexpected symbol in:
+"seq(from=2,to=8
+seq"
+> seq(from=2,to=8)
+[1] 2 3 4 5 6 7 8
+> seq(from=5,to=1)
+[1] 5 4 3 2 1
+> seq(from=-5,to=5)
+ [1] -5 -4 -3 -2 -1  0  1  2  3  4  5
+> seq(from=10,to=24,by=2)
+[1] 10 12 14 16 18 20 22 24
+> seq(from=10,to=2,by=2)
+Error in seq.default(from = 10, to = 2, by = 2) : 
+  wrong sign in 'by' argument
+> seq(from=10,to=2,by=-2)
+[1] 10  8  6  4  2
+> seq(10,2,-2)
+[1] 10  8  6  4  2
+> seq(10,5)
+[1] 10  9  8  7  6  5
+> seq(to=10,length=5)
+[1]  6  7  8  9 10
+> seq(from=10,length=5)
+[1] 10 11 12 13 14
+> conscience
+Error: object 'conscience' not found
+> seq(as.Date("2018-14-01"),by="days",length=5)
+Error in charToDate(x) : 
+  character string is not in a standard unambiguous format
+> seq(as.Date("2018-01-14"),by="days",length=5)
+[1] "2018-01-14" "2018-01-15" "2018-01-16" "2018-01-17" "2018-01-18"
+> seq(as.Date("2018-01-14"),by="years",length=5)
+[1] "2018-01-14" "2019-01-14" "2020-01-14" "2021-01-14" "2022-01-14"
+> seq(as.Date("2018-01-14"),by="years",length=8)
+[1] "2018-01-14" "2019-01-14" "2020-01-14" "2021-01-14" "2022-01-14" "2023-01-14" "2024-01-14" "2025-01-14"
+> rep(2.3,times=6)
+[1] 2.3 2.3 2.3 2.3 2.3 2.3
+> rep(1:4,2)
+[1] 1 2 3 4 1 2 3 4
+> rep(1:3,2:4)
+[1] 1 1 2 2 2 3 3 3 3
+> x<-seq(1:4)
+> re(x,times=3)
+Error in re(x, times = 3) : could not find function "re"
+> rep(x,times=3)
+ [1] 1 2 3 4 1 2 3 4 1 2 3 4
+> rep(x,each=3)
+ [1] 1 1 1 2 2 2 3 3 3 4 4 4
+> rep(x,each=3,times=3)
+ [1] 1 1 1 2 2 2 3 3 3 4 4 4 1 1 1 2 2 2 3 3 3 4 4 4 1 1 1 2 2 2 3 3 3 4 4 4
+> ans<-seq(from=2,to=6,by=2)
+> ans
+[1] 2 4 6
+> rep(1:3,ans)
+ [1] 1 1 2 2 2 2 3 3 3 3 3 3
+> string="as"
+> string
+[1] "as"
+> string="a's"
+> string
+[1] "a's"
+> string1='asjdvh"
++ string1
++ 
++ print(string1)
++ 
++ string1='asjdvh'
+Error: unexpected symbol in:
+"
+string1='asjdvh"
+> string1='asjdvh'
+> print(string1)
+[1] "asjdvh"
+> print(string1)
+[1] "asjdvh"
+> string1
+[1] "asjdvh"
+> paste("Helo","and","welcome")
+[1] "Helo and welcome"
+> paste("Helo","and","welcome",sep='*')
+[1] "Helo*and*welcome"
+> paste("Helo","and","welcome",sep='=')
+[1] "Helo=and=welcome"
+> string1<-"Hello"
+> string2<-"Welcome"
+> paste(string1,string2,sep='=')
+[1] "Hello=Welcome"
+> paste(string1,string2,collapse='=')
+[1] "Hello Welcome"
+> 0
+[1] 0
+> ans
+[1] 2 4 6
+> ans<-Hello world
+Error: unexpected symbol in "ans<-Hello world"
+> ans<-"Hello world"
+> substring(ans,6,9)
+[1] " wor"
+> strin1<-c("R is a","main course","mainly meant","for data sciences")
+> grep("ma", strin1,value=T)
+[1] "main course"  "mainly meant"
+> grep("ma", strin1,value=F)
+[1] 2 3
+> string3<-("R course is executed")
+> string4<-("Number of Institutes:500")
+> c(string3,string4)
+[1] "R course is executed"     "Number of Institutes:500"
+> grep("cut",c(string1,string2)
++ grep("cut",c(string1,string2))
+Error: unexpected symbol in:
+"grep("cut",c(string1,string2)
+grep"
+> grep("cut",c(string3,string4))
+[1] 1
+> grep("Num",c(string3,string4))
+[1] 2
+> grep("Num",c(string3,string4),value=T)
+[1] "Number of Institutes:500"
+> class(234)
+[1] "numeric"
+> class(asd786)
+Error: object 'asd786' not found
+> string1<-"india is the best!I am the best!what about you!?"
+> strsplit(string1,"!")
+[[1]]
+[1] "india is the best" "I am the best"     "what about you"    "?"                
+
+> country<-"China is a nice country as China is nice"
+> sub("China","India",country)
+[1] "India is a nice country as China is nice"
+> gsub("China","India",country)
+[1] "India is a nice country as India is nice"
+> 
